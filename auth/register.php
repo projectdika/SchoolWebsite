@@ -1,3 +1,19 @@
+<?php
+
+session_start();
+
+$errors = [
+    'login' => $_SESSION['login_error'] ?? '',
+    'register' => $_SESSION['register_error'] ??''
+];
+
+session_unset();
+function showError($error){
+    return !empty($error) ? "<p class='error-message'>$error</p>" : '';
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +36,9 @@
 <body>
     <div class="container">
         <div class="form-box" id="login-form">
-            <form action="">
+            <form action="login_register.php" method="post">
                 <h2>Register</h2>
+                <?= showError($errors['register']); ?>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
@@ -30,7 +47,7 @@
                     <option value="user">Murid</option>
                     <option value="teacher">Guru</option>
                 </select>
-                <button type="submit" name="login">Login</button>
+                <button type="submit" name="register">Login</button>
                 <p>Already have an account? <a href="login.php">Login</a></p>
             </form>
         </div>
