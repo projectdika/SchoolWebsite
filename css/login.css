@@ -45,7 +45,7 @@ body{
     margin-bottom: 20px;
 }
 
-.form-box button{
+.form-box button, .box button{
     width: 100%;
     padding: 12px;
     background: #7494ec;
@@ -86,4 +86,31 @@ body{
     color: #a42834;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.box h1{
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+
+span{
+    color: #7494ec;
+}
+
+.box p{
+    font-size: 22px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.box button{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.box button a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
 }

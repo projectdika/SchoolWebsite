@@ -47,7 +47,7 @@ function showError($error){
                     <option value="user">Murid</option>
                     <option value="teacher">Guru</option>
                 </select>
-                <button type="submit" name="register">Login</button>
+                <button type="submit" name="register">Register</button>
                 <p>Already have an account? <a href="login.php">Login</a></p>
             </form>
         </div>

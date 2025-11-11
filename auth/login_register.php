@@ -32,10 +32,10 @@ if (isset($_POST['login'])){
             $_SESSION['name'] = $user['name'];
             $_SESSION['email'] = $user['email'];
 
-            if ($user['role'] === 'admin' ){
+            if ($user['role'] === 'teacher' ){
                 header("Location: ../dasboard/admin_page.php");
             } else {
-                header("Location: ../dasboard/admin_page.php");
+                header("Location: ../dasboard/user_page.php");
             }
             exit();
         }
