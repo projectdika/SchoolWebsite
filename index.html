@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web | Sekolah</title>
+
+    <!-- My CSS -->
+     <link rel="stylesheet" href="css/style.css">
+
+    <!-- My Fonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS JS -->
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+<body id="beranda">
+    <!-- Start Navbar  -->
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-box">
+                <div class="logo">
+                    <h1>Wira Harapan</h1>
+                </div>
+                <ul class="menu" id="menu">
+                    <li>
+                        <a href="#">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="#tentang">Tentang Kami</a>
+                    </li>
+                    <li>
+                        <a href="#akademik">Akademik</a>
+                    </li>
+                    <li>
+                        <a href="#ppdb">PPDB</a>
+                    </li>
+                    <li>
+                        <a href="#kontak">Kontak</a>
+                    </li>
+                    <li>
+                        <a href="auth/login.php" class="login">Sign Up</a>
+                    </li>
+                </ul>
+
+                <i class="fa-solid fa-bars" id="menuBtn" onclick="showMenu()"></i>
+                <i class="fa-solid fa-xmark" id="closeBtn" onclick="closeMenu()"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Navbar  -->
+
+
+    <!-- Start Hero -->
+    <div class="hero">
+        <div class="container">
+            <div class="hero-box">
+                <h1 data-aos="fade-up" data-aos-duration="1000">Selamat Datang di <br> Wira Harapan</h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Sekolah Wira Harapan merupakan sebuah Lembaga Pendidikan yang berfokus pada Pegembangan Kreativitas seorang Peserta Didik yang meliputi Kreativitas dalam Design, maupun Logical Thinking.</p>
+                <a href="#tentang" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="600">Lihat Tentang Kami</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Hero -->
+
+    <!-- Start Tentang Kami -->
+    <div class="tentang" id="tentang">
+        <div class="container">
+            <div class="tentang-box">
+                <div class="box" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="assets/img/tentang.webp" alt="Tentang Image">
+                </div>
+
+                <div class="box" data-aos="fade-left" data-aos-duration="1000">
+                    <h1>Tentang Kami</h1>
+                    <p>Sekolah Wira Harapan merupakan sebuah Lembaga Pendidikan yang sudah dibangun sebelum terjadinya Virus COVID-19, lebih tepatnya pada tahun 2017, kemudian mulai beroperasi pada tahun 2022, yang dimana berkomitmen untuk mengembangkan Kreativitas seorang Peserta Didik diera Teknologi ataupun Artificial Intelegence.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info -->
+         <div class="info">
+            <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2><span>250+</span> <br>Siswa Pertahun</h2>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <h2><span>40+</span> <br>Guru Bersertifikat</h2>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <h2><span>110+</span> <br>Prestasi Kejuaraan</h2>
+            </div>
+         </div>
+    </div>
+    <!-- End Tentang Kami -->
+
+
+    <!-- Start Akademik -->
+
+    <div class="akademik" id="akademik" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="akademik-box">
+                <div class="box">
+                    <img src="assets/img/literasi.webp" alt="Akademik Image">
+                    <div class="desc">
+                        <h2>Literasi</h2>
+                        <p>Mengembangkan kemampuan berpikir kritis, berkomunikasi, dan memahami dunia sekitar.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/img/praktek.webp" alt="Praktik Image">
+                    <div class="desc">
+                        <h2>Praktik</h2>
+                        <p>Memahami dan melatih keterampilan, dan mengembangkan kemampuan berpikir.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/img//kreatifitas.webp" alt="Kreativitas Image">
+                    <div class="desc">
+                        <h2>Kreativitas</h2>
+                        <p>Mengembangkan kemampuan berpikir kreatif, mengekspresikan diri, dan rasa percaya diri.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Akademik -->
+
+
+    <!-- Start PPDB -->
+
+     <div class="ppdb" id="ppdb">
+        <div class="container">
+            <div class="ppdb-box">
+                <div class="box" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="assets/img/ppdb.jpg" alt="PPDB Image">
+                </div>
+                <div class="box" data-aos="fade-left" data-aos-duration="1000">
+                    <h2>Penerimaan Peserta Didik Baru (PPDB)</h2>
+                    <p>Tujuan PPDB adalah untuk memastikan penerimaan peserta didik baru berjalan secara objektif, transparan, akuntabel, non diskriminatif, dan berkeadilan.</p>
+                    <a href="#sign-up-disini">Link PPDB</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- End PPDB -->
+
+    <!-- Start Footer  -->
+    <footer id="kontak">
+        <div class="container">
+            <div class="footer-box">
+                <div class="box">
+                    <h2>Sosial Media</h2>
+                    <p>Berikut ini adalah beberapa sarana media social yang ada di Sekolah Wira Harapan yang bertujuan untuk sarana komunikasi jarak jauh untuk menginformasikan atau menampilkan kegiatan - kegiatan yang ada di Sekolah Wira Harapan ini.</p>
+                    <div class="social">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2>Menu</h2>
+                    <a href="#">Beranda</a>
+                    <a href="#">Tentang Kami</a>
+                    <a href="#">Akademik</a>
+                    <a href="#">PPDB</a>
+                    <a href="#">Sign Up</a>
+                </div>
+
+                <div class="box">
+                    <h2>Kontak</h2>
+                    <p><i class="fa-solid fa-envelope" id="icons"></i>igededika345@gmail.com</p>
+                    <p><i class="fa-solid fa-phone" id="icons"></i>085-713-231-257 (Pak Dika)</p>
+                    <p><i class="fa-solid fa-location-dot" id="icons"></i>Jl.Raya Padang Luwih Br.Tegal Jaya, Dalung Kuta Utara, Badung - Bali</p>
+                </div>
+            </div>
+
+            <!-- copy right -->
+             <div class="copyright">
+                <p>&copy; Copyright 2025 by <span>Wira Harapan</span></p>
+             </div>
+        </div>
+    </footer>
+
+    <!-- End Footer  -->
+
+    <!-- Scroll Up -->
+    <a href="#beranda" class="scroll-up">
+        <i class="fa-solid fa-arrow-up "></i>
+    </a>
+    
+    
+    <!-- Scroll Up -->
+
+
+
+
+
+    <!-- my JS -->
+     <script src="js/script.js"></script>
+
+    <!-- my AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

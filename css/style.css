@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    scroll-behavior: smooth;
+}
+
+#tentang, #akademik, #ppdb{
+    scroll-margin-top: 100px;
+}
+
+.navbar{
+    position: sticky;
+    padding: 30px 0;
+    z-index: 1000;
+    top: 0;
+    background: white;
+}
+
+.navbar .navbar-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.navbar .navbar-box .menu{
+    display: flex;
+    gap: 35px;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navbar-box .menu li{
+    list-style-type: none;
+}
+
+.navbar .navbar-box .menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar .navbar-box .login{
+    background-color: red;
+    color: white !important;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+
+.navbar .navbar-box .login:hover{
+    background-color: rgb(154, 32, 32);
+}
+
+.navbar .navbar-box .menu li a:not(.login)::after {
+    content: '';
+    display: block;
+    padding-bottom: 8px;
+    border-bottom: 0.1rem solid black;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-box .menu li a:not(.login):hover::after {
+    transform: scaleX(0.8);
+}
+
+
+.navbar .container, .hero .container, .tentang .container, .info, .akademik, .ppdb, footer .container{
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar .navbar-box #menuBtn, #closeBtn{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Hero Section */
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../assets/img/hero.webp);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+}
+
+.hero .hero-box{
+    color: #fff;
+}
+
+.hero .hero-box h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.hero .hero-box p{
+    margin-bottom: 30px;
+    line-height: 2;
+    width: 500px;
+    opacity: 75%;
+}
+
+.hero .hero-box a{ 
+    text-decoration: none;
+    color: #fff;
+    background-color: indigo;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.hero .hero-box a:hover{
+    background-color: rgb(128, 15, 209);
+}
+
+/* Tentang Kami */
+
+.tentang{
+    padding: 150px 0;
+}
+
+.tentang .tentang-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}   
+
+.tentang .tentang-box .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.tentang .tentang-box .box h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.tentang .tentang-box .box p{
+    line-height: 2;
+    text-align: justify;
+}
+
+
+/* Tentang Kami Bagian Info */
+
+.tentang .info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.tentang .info .box h2 span{
+    color: indigo;
+    font-size: 40px;
+}
+
+
+/* Akademik */
+.akademik{
+    padding-bottom: 100px;
+}
+
+.akademik .akademik-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.akademik .akademik-box .box{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.akademik .akademik-box .box img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.akademik .akademik-box .box .desc{
+    padding: 20px;
+}
+
+.akademik .akademik-box .box .desc p{
+    line-height: 2;
+}
+
+
+/* PPDB */
+.ppdb{
+    padding-block: 50px; 
+}
+
+/* padding block itu memberikan padding atas dan bawah */
+
+.ppdb .ppdb-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+.ppdb .ppdb-box .box img{
+    width: 100%;
+    border-radius: 35px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ppdb .ppdb-box .box h2{
+    font-size: 35px;
+
+}
+
+.ppdb .ppdb-box .box p{
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 2;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.ppdb .ppdb-box .box a{
+    background-color: indigo;
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.ppdb .ppdb-box .box a:hover{
+    background-color: rgb(127, 11, 210);
+}
+
+/* Footer */
+
+footer{
+    margin-top: 100px;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+footer .footer-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 50px;
+}
+
+footer .footer-box h2{
+    margin-bottom: 20px;
+}
+
+footer .footer-box p{
+    line-height: 2;
+    font-size: 14px;
+}
+
+/* box 1 */
+footer .footer-box .box:nth-child(1){
+    width: 400px;
+}
+
+footer .footer-box .social{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .footer-box .social a{
+    font-size: 28px;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-box .social a:hover{
+    color: rgb(221, 22, 165);
+}
+
+/* box 2 */
+footer .footer-box .box:nth-child(2) {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footer-box .box:nth-child(2) h2{
+    margin-bottom: 0;
+}
+
+footer .footer-box .box:nth-child(2) a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+footer .footer-box .box:nth-child(2) a:hover{
+    color: rgb(221, 22, 165);
+}
+
+footer .footer-box .box:nth-child(3){
+    width: 300px;
+    margin-bottom
+    : 20px;
+}
+
+footer .footer-box .box:nth-child(3) p{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .footer-box .box:nth-child(3) #icons{
+    margin: 5px;
+}
+
+.copyright{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.copyright p{
+    font-size: 14px;
+}
+
+.copyright span{
+    font-weight: bold;
+}
+
+/* scroll up */
+
+.scroll-up{
+    width: 50px;
+    height: 50px;
+    background-color: indigo;
+    color: white;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    opacity: 0;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.scroll-up.scroll-active{
+    opacity: 1;
+}
+
+
+@media (max-width:1128px){
+    .navbar .container{
+        width: 90%;
+    }
+}
+
+@media (max-width:1041px){
+     .navbar .navbar-box .menu{
+        display: none;
+    }
+
+    .navbar{
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar .navbar-box #menuBtn{
+        display: block;
+
+    }
+
+    .navbar .navbar-box .menu{
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 2px solid #000;
+    }
+
+    .navbar .navbar-box .menu li{
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .navbar .navbar-box .menu li .login{
+        background-color: rgb(154, 32, 32);
+        color: white;
+        border-radius: 20px;
+        padding: 5px 20px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .navbar .navbar-box .menu li .login:hover{
+        background-color: #b00000;
+    }
+}
+
+
+
+@media (max-width:656px){
+    .hero .hero-box h1{
+        font-size: 35px;
+    }
+    .hero .hero-box p{
+        width: 100%;
+    }
+    .hero .hero-box a{ 
+        padding: 15px 25px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:829px){
+    .tentang .tentang-box{
+        grid-template-columns: 1fr;
+    }
+    .tentang .tentang-box .box h1{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:656px){
+    .akademik .akademik-box{
+        gap: 40px;
+    }
+}
+
+@media (max-width:1204px){
+    .ppdb .ppdb-box .box h2{
+        font-size: 25px;
+    }
+
+    .ppdb .ppdb-box .box p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:999px){
+    .ppdb .ppdb-box{
+        grid-template-columns: 1fr;
+    }
+
+    .ppdb .ppdb-box .box img{
+        width: 100%;
+    }
+}
